@@ -8,26 +8,28 @@
 </head>
 <body>
   <form id="new-item-form">
-    <div>
-      <label for="title">Title</label>
-      <input type="text" id="title" required/>
+    <div id="form-wrap">
+      <div id="form-item">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required/>
+      </div>
+      <div id="form-item">
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" required/>
+      </div>
+      <div id="form-item">
+        <label for="developer">Developer:</label>
+        <input type="text" id="developer" required/>
+      </div>
+      <div id="form-item">
+        <label for="year">Year:</label>
+        <input type="text" id="year" required/>
+      </div>
     </div>
-    <div>
-      <label for="genre">Genre</label>
-      <input type="text" id="genre" required/>
-    </div>
-    <div>
-      <label for="developer">Developer</label>
-      <input type="text" id="developer" required/>
-    </div>
-    <div>
-      <label for="year">Year</label>
-      <input type="text" id="year" required/>
-    </div>
-    <input type="submit" value="save"/>
+    <input type="submit" value="Save"/>
   </form>
   <button type="button" name="button" id="delete-all">Delete all</button>
-  <h1>Games To Play</h1>
+  <h1>Games To Play:</h1>
   <ul id="game-list"></ul>
 
 </body>

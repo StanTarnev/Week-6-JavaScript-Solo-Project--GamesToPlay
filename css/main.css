@@ -1,0 +1,13 @@
+
+body {
+  font-family: fantasy;
+  background-color: brown;
+}
+#form-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+#form-item {
+  padding: 20px 20px;
+}
