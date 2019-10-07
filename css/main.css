@@ -1,8 +1,10 @@
 
 body {
   font-family: fantasy;
-  background-color: brown;
+  color: red;
+  background-image: url("https://images7.alphacoders.com/327/327601.jpg");
 }
+
 #form-wrap {
   display: flex;
   flex-direction: row;
@@ -10,4 +12,30 @@ body {
 
 #form-item {
   padding: 20px 20px;
+}
+
+#save-button, #delete-all, h1 {
+  margin-left: 20px;
+}
+
+h1, .entry-title {
+  text-decoration: underline;
+}
+
+#game-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game-list-entry {
+  border: 1px solid red;
+  padding: 15px;
+  border-radius: 10px;
+  color: red;
+  margin: 10px;
+  background-color: black;
+}
+
+.radio-buttons {
+  display: inline-table;
 }

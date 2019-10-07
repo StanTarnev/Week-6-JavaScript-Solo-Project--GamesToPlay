@@ -15,7 +15,21 @@
       </div>
       <div id="form-item">
         <label for="genre">Genre:</label>
-        <input type="text" id="genre" required/>
+        <div class="radio-buttons">
+          <input type="radio" id="genre1" name="genre" value="Graphic Adventure">
+          <label for="genre1">Graphic Adventure</label><br/>
+          <input type="radio" id="genre2" name="genre" value="Survival Horror">
+          <label for="genre2">Survivial Horror</label><br/>
+          <input type="radio" id="genre3" name="genre" value="First-person Shooter">
+          <label for="genre3">First-person Shooter</label><br/>
+          <input type="radio" id="genre4" name="genre" value="Third-person Shooter">
+          <label for="genre4">Third-person Shooter</label><br/>
+          <input type="radio" id="genre5" name="genre" value="Racing">
+          <label for="genre5">Racing</label><br/>
+          <input type="radio" id="genre6" name="genre" value="Action Adventure">
+          <label for="genre6">Action Adventure</label>
+        </div>
+        <!-- <input type="text" id="genre" required/> -->
       </div>
       <div id="form-item">
         <label for="developer">Developer:</label>
@@ -26,7 +40,7 @@
         <input type="text" id="year" required/>
       </div>
     </div>
-    <input type="submit" value="Save"/>
+    <input type="submit" value="Save" id="save-button"/>
   </form>
   <button type="button" name="button" id="delete-all">Delete all</button>
   <h1>Games To Play:</h1>

@@ -12,9 +12,11 @@ const handleFormSubmit = function(event) {
   const gameList = document.querySelector('#game-list');
 
   const gameListEntry = document.createElement('li');
+  gameListEntry.classList.add('game-list-entry');
 
   const title = document.createElement('h2');
   title.textContent = event.target.title.value;
+  title.classList.add('entry-title');
   const genre = document.createElement('h3');
   genre.textContent = `Genre: ${event.target.genre.value}`;
   const developer = document.createElement('h3');
