@@ -5,17 +5,17 @@ body {
   background-image: url("https://images7.alphacoders.com/327/327601.jpg");
 }
 
-#form-wrap {
+#new-item-form {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
 }
 
-#form-item {
-  padding: 20px 20px;
+#form-item, #buttons {
+  padding: 20px 20px 0px 20px;
 }
 
-#save-button, #delete-all, h1 {
-  margin-left: 20px;
+h1 {
+  margin: 0px 0px 20px 50px;
 }
 
 h1, .entry-title {
@@ -38,4 +38,10 @@ h1, .entry-title {
 
 .radio-buttons {
   display: inline-table;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
