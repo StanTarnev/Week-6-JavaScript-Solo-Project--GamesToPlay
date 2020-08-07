@@ -38,6 +38,7 @@ h1, .entry-title {
 #game-list {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .game-list-entry {
