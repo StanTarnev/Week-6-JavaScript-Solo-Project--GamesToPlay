@@ -14,7 +14,7 @@ body {
   padding: 20px 20px 0px 20px;
 }
 
-#save-button, #delete-all {
+#save-button, #delete-all, .remove-button {
   color: white;
   padding-top: 1px;
   padding-bottom: 3px;
@@ -22,7 +22,7 @@ body {
   background-color: red;
 }
 
-#save-button:hover, #delete-all:hover {
+#save-button:hover, #delete-all:hover, .remove-button:hover {
   color: red;
   background-color: white;
 }
@@ -33,6 +33,10 @@ h1 {
 
 h1, .entry-title {
   text-decoration: underline;
+}
+
+.entry-title {
+  margin: 0px;
 }
 
 #game-list {
