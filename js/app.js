@@ -17,22 +17,25 @@ const handleFormSubmit = function(event) {
   const title = document.createElement('h2');
   title.textContent = event.target.title.value;
   title.classList.add('entry-title');
+
   const genre = document.createElement('h3');
   genre.textContent = `Genre: ${event.target.genre.value}`;
+
   const developer = document.createElement('h3');
   developer.textContent = `Developer: ${event.target.developer.value}`;
+
   const year = document.createElement('h3');
   year.textContent = `Year: ${event.target.year.value}`;
-
+  
   const button = document.createElement('BUTTON');
   button.textContent = 'Remove';
   button.classList.add('remove-button');
+  button.addEventListener('click', handleRemoveListItem);
 
   gameListEntry.appendChild(title);
   gameListEntry.appendChild(genre);
   gameListEntry.appendChild(developer);
   gameListEntry.appendChild(year);
-
   gameListEntry.appendChild(button);
 
   gameList.appendChild(gameListEntry);
@@ -43,4 +46,8 @@ const handleFormSubmit = function(event) {
 const handleDeleteAllItems = function(event) {
   const gameList = document.querySelector('#game-list');
   gameList.innerHTML = '';
+};
+
+const handleRemoveListItem = function(event) {
+  event.target.parentElement.remove();
 };
