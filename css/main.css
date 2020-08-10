@@ -41,8 +41,9 @@ h1, .entry-title {
   text-align: center;
 }
 
-.remove-button {
-  margin-left: 33%;
+.button-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 #game-list {

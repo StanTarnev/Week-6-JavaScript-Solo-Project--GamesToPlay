@@ -26,17 +26,21 @@ const handleFormSubmit = function(event) {
 
   const year = document.createElement('h3');
   year.textContent = `Year: ${event.target.year.value}`;
-  
+
   const button = document.createElement('BUTTON');
   button.textContent = 'Remove';
   button.classList.add('remove-button');
   button.addEventListener('click', handleRemoveListItem);
 
+  const buttonWrapper = document.createElement('div');
+  buttonWrapper.classList.add('button-wrapper');
+  buttonWrapper.appendChild(button);
+
   gameListEntry.appendChild(title);
   gameListEntry.appendChild(genre);
   gameListEntry.appendChild(developer);
   gameListEntry.appendChild(year);
-  gameListEntry.appendChild(button);
+  gameListEntry.appendChild(buttonWrapper);
 
   gameList.appendChild(gameListEntry);
 
@@ -49,5 +53,5 @@ const handleDeleteAllItems = function(event) {
 };
 
 const handleRemoveListItem = function(event) {
-  event.target.parentElement.remove();
+  event.target.parentElement.parentElement.remove();
 };
