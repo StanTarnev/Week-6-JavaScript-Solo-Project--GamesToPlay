@@ -3,6 +3,8 @@ body {
   font-family: Papyrus;
   color: red;
   background-image: url("https://images7.alphacoders.com/327/327601.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
 #new-item-form {
@@ -50,6 +52,7 @@ h1, .entry-title {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  justify-content: space-between;
 }
 
 .game-list-entry {
