@@ -58,7 +58,8 @@ h1, .entry-title {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 0px;
 }
 
 .game-list-entry {
