@@ -31,7 +31,13 @@ body {
 }
 
 h1 {
-  margin: 0px 0px 20px 50px;
+  margin: 0px 0px 20px 50%;
+  border: 1px solid red;
+  border-radius: 10px;
+  background-color: black;
+  width: max-content;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 h1, .entry-title {
